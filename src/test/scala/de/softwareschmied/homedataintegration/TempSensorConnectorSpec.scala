@@ -20,6 +20,7 @@ class TempSensorConnectorSpec extends Specification {
       val sensors = Await.result(sensorsFuture, 30 seconds)
       logger.info(s"$sensorsFuture")
       sensors.sensors.size == 2
+
     }
   }
 }
